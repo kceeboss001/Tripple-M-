@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Web Album</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <!-- Album Section -->
+    <div class="album-container">
+      <div class="album-section" id="section1">
+        <h2>Our Work</h2>
+        <div class="images">
+          <img
+            src="new-pic/IMG-20250324-WA0039.jpg"
+            alt="Image 1"
+            class="album-image"
+          />
+          <img
+            src="new-pic/IMG-20250324-WA0031.jpg"
+            alt="Image 2"
+            class="album-image"
+          />
+          <img
+            src="new-pic/WhatsApp Image 2025-03-24 at 13.57.31_d40f3002.jpg"
+            alt="Image 3"
+            class="album-image"
+          />
+          <img
+            src="new-pic/IMG-20250324-WA0042.jpg"
+            alt="Image 4"
+            class="album-image"
+          />
+          <img
+            src="new-pic/IMG-20250324-WA0032.jpg"
+            alt="Image 5"
+            class="album-image"
+          />
+          <img
+            src="new-pic/IMG-20250324-WA0036.jpg"
+            alt="Image 6"
+            class="album-image"
+          />
+        </div>
+      </div>
+
+      <div class="album-section" id="section2">
+        <h2>Graduation</h2>
+        <div class="images">
+          <img
+            src="graduation-pic/IMG-20250317-WA0022.jpg"
+            alt="Image 4"
+            class="album-image"
+          />
+          <img
+            src="graduation-pic/IMG-20250317-WA0024.jpg"
+            alt="Image 5"
+            class="album-image"
+          />
+          <img
+            src="graduation-pic/IMG-20250317-WA0027.jpg"
+            alt="Image 6"
+            class="album-image"
+          />
+          <img
+            src="graduation-pic/IMG-20250317-WA0017.jpg"
+            alt="Image 6"
+            class="album-image"
+          />
+          <img
+            src="graduation-pic/IMG-20250324-WA0089.jpg"
+            alt="Image 6"
+            class="album-image"
+          />
+          <img
+            src="graduation-pic/IMG-20250317-WA0028.jpg"
+            alt="Image 6"
+            class="album-image"
+          />
+        </div>
+      </div>
+
+      <div class="album-section" id="section2">
+        <h2>others</h2>
+        <div class="images">
+          <img src="mmm-img3.jpg" alt="Image 4" class="album-image" />
+          <img src="mmm-img5.jpg" alt="Image 5" class="album-image" />
+          <img src="mmm-img2.jpg" alt="Image 6" class="album-image" />
+        </div>
+      </div>
+      <!-- Add more sections as needed -->
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close-btn">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image" />
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>
