@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.418);
+  color: black;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  width: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 70px;
+}
+
+nav ul li a {
+  color: rgb(90, 94, 94);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: #beb9b1;
+  font-weight: bolder;
+}
+
+nav .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.home {
+  /* background: #1e1f20; */
+  background-image: url("icon/background.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.home h1 span {
+  color: #66625b;
+}
+
+.about {
+  background: #ebf5ef;
+  color: #fff;
+}
+
+.about .heading {
+  /* border: 1px solid red; */
+  max-width: 800px;
+  text-align: center;
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.about .heading p {
+  display: flex;
+}
+
+.about .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #333;
+  padding: 10px;
+}
+.about .grid-container .grid {
+  width: 300px;
+  /* height: 500px; */
+  border-radius: 10px;
+  padding: 10px;
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  background: rgb(240, 237, 237);
+  transition: all ease 0.4s;
+}
+
+.about .grid-container .grid:hover {
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7);
+}
+
+.about .grid-container .grid p {
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.about .grid-container .grid .two {
+  width: 100px;
+}
+
+.grid-container .link p a {
+  font-size: 15px;
+  transition: all ease 0.4s;
+}
+
+.grid-container .link p a:hover {
+  font-size: 17px;
+}
+
+.contact {
+  background: #dcebe26b;
+  color: #fff;
+}
+
+/* Basic Layout and Style for the Contact Section */
+.content-section {
+  /* background-color: #1e1e1e; */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.holographic-card {
+  background: linear-gradient(
+    45deg,
+    rgba(173, 204, 204, 0.2),
+    rgba(255, 0, 255, 0.2),
+    rgba(255, 255, 0, 0.2)
+  );
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(51, 54, 54, 0.5);
+
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(0, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #3498db, #a19278);
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, #cec6bb, #3498db);
+  transform: scale(1.05);
+}
+
+textarea {
+  height: 150px;
+}
+
+.container h1,
+.container h2,
+p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.container h1 {
+  text-decoration: solid;
+  text-align: center;
+  font-size: 35px;
+}
+
+.container p {
+  font-size: 18px;
+  color: #333;
+}
+
+.container .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .icons .icon {
+  margin-left: 30px;
+}
+
+/* Styles for the content and slideshow */
+.content-section {
+  background-color: #dcebe2;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(45deg, #3498db, #a19278);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slide-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.show-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2980b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: linear-gradient(45deg, #3498db, #a19278);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+    display: none; /* Hide menu by default on mobile */
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+
+  /* Show the menu when active */
+  nav ul.active {
+    display: flex;
+  }
+
+  /* Style adjustments */
+  section {
+    padding-top: 100px;
+  }
+}
+
+/* Desktop and tablet styles */
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    margin-left: 40px;
+  }
+
+  nav .hamburger {
+    display: none;
+  }
+}
