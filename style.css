@@ -1,4 +1,4 @@
-/* General Reset */
+ /* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 /* Header */
-header {
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px; */
   /* background-color: #333; */
   background: transparent;
 }
@@ -90,7 +90,7 @@ section {
   min-height: 100vh;
 }
 
-.home {
+/* .home {
   background: url(icon/background3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +98,7 @@ section {
   background-blend-mode: multiply;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .home .logo {
@@ -165,29 +165,29 @@ section {
   padding: 10px;
 }
 
-.about .grid-container {
+/* .about .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: #333;
-  padding: 10px;
+  padding: 10px; */
 }
 .about .grid-container .grid {
-  width: 280px;
+/*   width: 280px;
   border-radius: 10px;
   padding: 10px;
   /* border: 1px solid red; */
   margin-left: 20px;
   background: rgb(240, 237, 237);
-  transition: all ease 0.4s;
+  transition: all ease 0.4s; 
 }
 
 .about .grid-container .grid:hover {
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.7);
 }
 
-.about .grid-container .grid p {
+/* .about .grid-container .grid p {
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  margin: 10px; */
 }
 
 .about .grid-container .grid .two {
@@ -236,13 +236,13 @@ h2 {
   color: white;
 }
 
-.slideshow-container {
+/* .slideshow-container {
   position: relative;
   max-width: 400px;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
-}
+} */
 
 .slide {
   display: none;
@@ -256,7 +256,7 @@ h2 {
 }
 
 .slide-control {
-  position: absolute;
+/*   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: linear-gradient(45deg, #3498db, #a19278);
@@ -265,7 +265,7 @@ h2 {
   font-size: 30px;
   padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s; */
 }
 
 .slide-control:hover {
@@ -280,7 +280,7 @@ h2 {
   right: 10px;
 }
 
-.show-more-btn {
+/* .show-more-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -289,7 +289,7 @@ h2 {
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; */
 }
 
 .show-more-btn:hover {
@@ -378,10 +378,10 @@ footer {
     margin-left: 10px;
   }
 
-  .about .grid-container {
+/*   .about .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
 
   .about .grid-container .grid {
     margin-top: 10px;
@@ -401,3 +401,4 @@ footer {
 .nav.show {
   display: block;
 }
+ 
